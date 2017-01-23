@@ -2,11 +2,24 @@
 #include <fstream>
 #include <regex>
 
-
+string readhtml(string filename);
 int main() {
-    vector<string> strv;
-    vector<DomTreeNode *> dtnv;
-    DomTreeNode* test = new DomTreeNode("root","root text",strv,dtnv);
-    delete test;
+    cout<<readhtml("input.htm");
     return 0;
+}
+string readhtml(string filename){
+    string output = "";
+    char buffer[512];
+    ifstream in;
+    in.open(filename);
+    if(!in.is_open()){
+        cout<<"open file error."<<endl;
+        exit(0);
+    }
+    while (!in.eof()){
+        in>>buffer;
+        output += buffer;
+    }
+    in.close();
+    return output;
 }
