@@ -4,13 +4,9 @@
 
 
 int main() {
-    vector<int> test;
-    for(int i = 0;i<10;i++){
-        test.insert(test.end(),i);
-    }
-    vector<int>::iterator i;
-    for(i = test.begin();i!=test.end();i++){
-        cout<<*i<<" ";
-    }
+    vector<string> strv;
+    vector<DomTreeNode *> dtnv;
+    DomTreeNode* test = new DomTreeNode("root","root text",strv,dtnv);
+    delete test;
     return 0;
 }

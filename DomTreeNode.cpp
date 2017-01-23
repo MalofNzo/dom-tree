@@ -4,11 +4,13 @@
 
 #include "DomTreeNode.h"
 
-DomTreeNode::DomTreeNode() {}
+DomTreeNode::DomTreeNode() {
+}
 
 DomTreeNode::DomTreeNode(const string &nodename, const string &nodetext, const vector<string> &attributes,
                          const vector<DomTreeNode *> &childNodes) : nodename(nodename), nodetext(nodetext),
-                                                                    attributes(attributes), childNodes(childNodes) {}
+                                                                    attributes(attributes), childNodes(childNodes) {
+}
 
 const string &DomTreeNode::getNodename() const {
     return nodename;
