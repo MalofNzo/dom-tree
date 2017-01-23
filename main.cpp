@@ -3,8 +3,11 @@
 #include <regex>
 
 string readhtml(string filename);
+DomTreeNode* makeDomTree(string raw);
 int main() {
-    cout<<readhtml("input.htm");
+    string rawhtml = readhtml("input.htm");
+    //cout<<rawhtml<<endl;
+    makeDomTree(rawhtml);
     return 0;
 }
 string readhtml(string filename){
@@ -22,4 +25,9 @@ string readhtml(string filename){
     }
     in.close();
     return output;
+}
+DomTreeNode* makeDomTree(string raw){
+    string ftag("<\\w*>");
+    string stag("</+\\w*>");
+    return nullptr;
 }
