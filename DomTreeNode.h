@@ -14,7 +14,7 @@ public:
     DomTreeNode();
 
     DomTreeNode(const string &nodename, const string &nodetext, const vector<string> &attributes,
-                const vector<DomTreeNode> &childNodes);
+                const vector<DomTreeNode *> &childNodes);
 
     const string &getNodename() const;
 
@@ -28,15 +28,16 @@ public:
 
     void setAttributes(const vector<string> &attributes);
 
-    const vector<DomTreeNode> &getChildNodes() const;
+    const vector<DomTreeNode *> &getChildNodes() const;
 
-    void setChildNodes(const vector<DomTreeNode> &childNodes);
+    void setChildNodes(const vector<DomTreeNode *> &childNodes);
+
 
 private:
     string nodename;
     string nodetext;
     vector<string> attributes;
-    vector<DomTreeNode> childNodes;
+    vector<DomTreeNode*> childNodes;
 };
 
 

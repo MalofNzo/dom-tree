@@ -7,8 +7,8 @@
 DomTreeNode::DomTreeNode() {}
 
 DomTreeNode::DomTreeNode(const string &nodename, const string &nodetext, const vector<string> &attributes,
-                         const vector<DomTreeNode> &childNodes) : nodename(nodename), nodetext(nodetext),
-                                                                  attributes(attributes), childNodes(childNodes) {}
+                         const vector<DomTreeNode *> &childNodes) : nodename(nodename), nodetext(nodetext),
+                                                                    attributes(attributes), childNodes(childNodes) {}
 
 const string &DomTreeNode::getNodename() const {
     return nodename;
@@ -34,10 +34,10 @@ void DomTreeNode::setAttributes(const vector<string> &attributes) {
     DomTreeNode::attributes = attributes;
 }
 
-const vector<DomTreeNode> &DomTreeNode::getChildNodes() const {
+const vector<DomTreeNode *> &DomTreeNode::getChildNodes() const {
     return childNodes;
 }
 
-void DomTreeNode::setChildNodes(const vector<DomTreeNode> &childNodes) {
+void DomTreeNode::setChildNodes(const vector<DomTreeNode *> &childNodes) {
     DomTreeNode::childNodes = childNodes;
 }
