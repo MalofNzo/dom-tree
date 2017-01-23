@@ -10,6 +10,28 @@
 using namespace std;
 
 class DomTreeNode {
+public:
+    DomTreeNode();
+
+    DomTreeNode(const string &nodename, const string &nodetext, const vector<string> &attributes,
+                const vector<DomTreeNode> &childNodes);
+
+    const string &getNodename() const;
+
+    void setNodename(const string &nodename);
+
+    const string &getNodetext() const;
+
+    void setNodetext(const string &nodetext);
+
+    const vector<string> &getAttributes() const;
+
+    void setAttributes(const vector<string> &attributes);
+
+    const vector<DomTreeNode> &getChildNodes() const;
+
+    void setChildNodes(const vector<DomTreeNode> &childNodes);
+
 private:
     string nodename;
     string nodetext;
