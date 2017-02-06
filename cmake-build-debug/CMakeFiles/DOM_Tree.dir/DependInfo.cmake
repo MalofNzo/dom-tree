@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DomTreeNode.cpp" "/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/cmake-build-debug/CMakeFiles/DOM_Tree.dir/DomTreeNode.cpp.o"
-  "/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DynamicStack.cpp" "/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/cmake-build-debug/CMakeFiles/DOM_Tree.dir/DynamicStack.cpp.o"
   "/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/main.cpp" "/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/cmake-build-debug/CMakeFiles/DOM_Tree.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

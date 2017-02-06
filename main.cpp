@@ -1,13 +1,21 @@
 #include "DomTreeNode.h"
 #include "DynamicStack.h"
-#include <iostream>
 #include <fstream>
 using namespace std;
 string readhtml(string filename);
 DomTreeNode* makeDomTree(string raw);
 int main() {
-    string rawhtml = readhtml("input.htm");
-    makeDomTree(rawhtml);
+    DynamicStack<int> st;
+    st.push(1);
+    st.push(2);
+    st.push(3);
+    st.push(4);
+    cout<<st.pop()<<endl;
+    cout<<st.pop()<<endl;
+    cout<<st.pop()<<endl;
+    cout<<st.pop()<<endl;
+//    string rawhtml = readhtml("input.htm");
+//    makeDomTree(rawhtml);
     return 0;
 }
 string readhtml(string filename){

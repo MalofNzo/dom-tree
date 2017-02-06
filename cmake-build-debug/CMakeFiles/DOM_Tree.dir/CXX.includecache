@@ -11,9 +11,15 @@ DomTreeNode.h
 /Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DomTreeNode.h
 
 /Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DomTreeNode.h
-iostream
+istream
+-
+vector
 -
 string
+-
+
+/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DynamicStack.h
+iostream
 -
 vector
 -
@@ -21,8 +27,8 @@ vector
 /Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/main.cpp
 DomTreeNode.h
 /Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DomTreeNode.h
+DynamicStack.h
+/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DynamicStack.h
 fstream
--
-regex
 -
 

@@ -3,5 +3,5 @@ project(DOM_Tree)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp DomTreeNode.cpp DomTreeNode.h DynamicStack.cpp DynamicStack.h headerhub.h)
+set(SOURCE_FILES main.cpp DomTreeNode.cpp DomTreeNode.h DynamicStack.h)
 add_executable(DOM_Tree ${SOURCE_FILES})

@@ -150,33 +150,6 @@ DomTreeNode.cpp.s:
 	$(MAKE) -f CMakeFiles/DOM_Tree.dir/build.make CMakeFiles/DOM_Tree.dir/DomTreeNode.cpp.s
 .PHONY : DomTreeNode.cpp.s
 
-DynamicStack.o: DynamicStack.cpp.o
-
-.PHONY : DynamicStack.o
-
-# target to build an object file
-DynamicStack.cpp.o:
-	$(MAKE) -f CMakeFiles/DOM_Tree.dir/build.make CMakeFiles/DOM_Tree.dir/DynamicStack.cpp.o
-.PHONY : DynamicStack.cpp.o
-
-DynamicStack.i: DynamicStack.cpp.i
-
-.PHONY : DynamicStack.i
-
-# target to preprocess a source file
-DynamicStack.cpp.i:
-	$(MAKE) -f CMakeFiles/DOM_Tree.dir/build.make CMakeFiles/DOM_Tree.dir/DynamicStack.cpp.i
-.PHONY : DynamicStack.cpp.i
-
-DynamicStack.s: DynamicStack.cpp.s
-
-.PHONY : DynamicStack.s
-
-# target to generate assembly for a file
-DynamicStack.cpp.s:
-	$(MAKE) -f CMakeFiles/DOM_Tree.dir/build.make CMakeFiles/DOM_Tree.dir/DynamicStack.cpp.s
-.PHONY : DynamicStack.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -216,9 +189,6 @@ help:
 	@echo "... DomTreeNode.o"
 	@echo "... DomTreeNode.i"
 	@echo "... DomTreeNode.s"
-	@echo "... DynamicStack.o"
-	@echo "... DynamicStack.i"
-	@echo "... DynamicStack.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

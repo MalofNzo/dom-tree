@@ -88,13 +88,7 @@
 		<Unit filename="/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DomTreeNode.h">
 			<Option target="DOM_Tree"/>
 		</Unit>
-		<Unit filename="/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DynamicStack.cpp">
-			<Option target="DOM_Tree"/>
-		</Unit>
 		<Unit filename="/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/DynamicStack.h">
-			<Option target="DOM_Tree"/>
-		</Unit>
-		<Unit filename="/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/headerhub.h">
 			<Option target="DOM_Tree"/>
 		</Unit>
 		<Unit filename="/Users/tose/Desktop/Workspace/CLion Projects/DOM_Tree/main.cpp">
