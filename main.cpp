@@ -1,12 +1,11 @@
 #include "DomTreeNode.h"
+#include "DynamicStack.h"
 #include <fstream>
-#include <regex>
-
+using namespace std;
 string readhtml(string filename);
 DomTreeNode* makeDomTree(string raw);
 int main() {
     string rawhtml = readhtml("input.htm");
-    //cout<<rawhtml<<endl;
     makeDomTree(rawhtml);
     return 0;
 }
@@ -27,7 +26,11 @@ string readhtml(string filename){
     return output;
 }
 DomTreeNode* makeDomTree(string raw){
-    string ftag("<\\w*>");
-    string stag("</+\\w*>");
+    int htmlsize = raw.size();
+    char ftag = '<';
+    for(int i = 0;i<10;i++){
+        cout<<raw[i]<<(raw[i]==ftag)<<endl;
+    }
     return nullptr;
 }
+

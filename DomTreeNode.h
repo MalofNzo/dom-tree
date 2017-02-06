@@ -1,12 +1,11 @@
 //
 // Created by 江涛 on 2017/1/23.
 //
-#include <iostream>
-#include <string>
-#include <vector>
 #ifndef DOM_TREE_DOMTREENODE_H
 #define DOM_TREE_DOMTREENODE_H
-
+#include <istream>
+#include <vector>
+#include <string>
 using namespace std;
 
 class DomTreeNode {
