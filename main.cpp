@@ -1,5 +1,6 @@
 #include "DomTreeNode.h"
 #include "DynamicStack.h"
+#include <iostream>
 #include <fstream>
 using namespace std;
 string readhtml(string filename);
