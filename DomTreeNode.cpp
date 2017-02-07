@@ -5,6 +5,8 @@
 #include "DomTreeNode.h"
 
 DomTreeNode::DomTreeNode() {
+    this->nodename = "root";
+    this->nodetext = "";
 }
 
 DomTreeNode::DomTreeNode(const string &nodename, const string &nodetext, const vector<string> &attributes,
