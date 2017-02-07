@@ -3,7 +3,7 @@
 #include <fstream>
 using namespace std;
 string readhtml(string filename);
-void makeDomTree(string raw);
+void makeDomTree(string raw,DomTreeNode* treeNode);
 int main() {
 //    string rawhtml = readhtml("input.htm");
 //    makeDomTree(rawhtml);
@@ -25,12 +25,11 @@ string readhtml(string filename){
     in.close();
     return output;
 }
-void makeDomTree(string raw){
+void makeDomTree(string raw,DomTreeNode* treeNode){
     int htmlsize = raw.size();
     char ftag = '<';
     for(int i = 0;i<10;i++){
         cout<<raw[i]<<(raw[i]==ftag)<<endl;
     }
-    return nullptr;
 }
 
