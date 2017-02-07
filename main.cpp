@@ -3,17 +3,8 @@
 #include <fstream>
 using namespace std;
 string readhtml(string filename);
-DomTreeNode* makeDomTree(string raw);
+void makeDomTree(string raw);
 int main() {
-    DynamicStack<int> st;
-    st.push(1);
-    st.push(2);
-    st.push(3);
-    st.push(4);
-    cout<<st.pop()<<endl;
-    cout<<st.pop()<<endl;
-    cout<<st.pop()<<endl;
-    cout<<st.pop()<<endl;
 //    string rawhtml = readhtml("input.htm");
 //    makeDomTree(rawhtml);
     return 0;
@@ -34,7 +25,7 @@ string readhtml(string filename){
     in.close();
     return output;
 }
-DomTreeNode* makeDomTree(string raw){
+void makeDomTree(string raw){
     int htmlsize = raw.size();
     char ftag = '<';
     for(int i = 0;i<10;i++){
